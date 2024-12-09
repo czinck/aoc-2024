@@ -1,5 +1,6 @@
 (ns aoc-2024.util
-  (:require [clojure.java.io]))
+  (:require [clojure.java.io]
+            [clojure.edn :as edn]))
 
 (defn slurp-lines
   [filename]
@@ -8,4 +9,4 @@
 
 (defn parse-int
   [is]
-  (Integer/parseInt is))
+  (edn/read-string is))
