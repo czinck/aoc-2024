@@ -5,10 +5,11 @@
             [aoc-2024.day4 :as day4]
             [aoc-2024.day5 :as day5]
             [aoc-2024.day6 :as day6]
-            [aoc-2024.day7 :as day7])
+            [aoc-2024.day7 :as day7]
+            [aoc-2024.day8 :as day8])
   (:gen-class))
 
 (defn -main
   [& args]
-  (println (time (day7/part1)))
-  (println (time (day7/part2))))
+  (println (time (day8/part1)))
+  (println (time (day8/part2))))
